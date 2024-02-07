@@ -15,10 +15,10 @@ type (
 	Task  func() error
 	Group struct {
 		wg       sync.WaitGroup
-		mu       sync.Mutex
 		limiter  chan token
-		errors   []error
 		errLimit int
+		mu       sync.Mutex
+		errors   []error
 	}
 )
 

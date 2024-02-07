@@ -20,6 +20,16 @@ func TestGo(t *testing.T) {
 			tasksRes       []error
 		}{
 			{
+				0,
+				0,
+				[]error{nil, errTest, nil},
+			},
+			{
+				2,
+				0,
+				[]error{nil, errTest, nil},
+			},
+			{
 				2,
 				2,
 				[]error{nil, errTest, nil},
